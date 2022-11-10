@@ -32,7 +32,7 @@ autoHeadingIDType = "blackfriday"
 
 [languages]
 [languages.en]
-title = "Internet Security Research Group"
+title = "Mengshi's Test Website"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
