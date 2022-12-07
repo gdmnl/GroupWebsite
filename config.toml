@@ -6,8 +6,8 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
 [params]
-copyrighthtml = "&copy; 2022 Internet Security Research Group. All rights reserved."
-address = "548 Market St, PMB 77519, San Francisco, California 94104-5401"
+copyrighthtml = "&copy; 2022 Prof. Luo Siqiang's Research Group. All rights reserved."
+address = "50 Nanyang Ave, #32 Block N4 #02a, Singapore 639798"
 images = ["images/opengraph/ISRG-opengraph-wide.png"]
 twitter_card_format = "summary"
 social_share_twitter_square = "images/opengraph/ISRG-opengraph-square.png"

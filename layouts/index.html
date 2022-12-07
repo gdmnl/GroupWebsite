@@ -1,108 +1,116 @@
 <!DOCTYPE html>
 <html>
   {{ partial "head.html" . }} {{ partial "header.html" . }}
-  <section class="slice slice-isrg bg-cover bg-size--cover overflow-hidden" data-spotlight="fullscreen" data-separator="rounded-left" data-separator-orientation="bottom">
+  <section class="slice slice-isrg bg-cover bg-size--cover overflow-hidden" data-spotlight="fullscreen"  >
     <span class="mask bg-gradient-secondary opacity-8"></span>
     <div class="container">
       <div class="row">
-        <div class="col-lg-7">
+        <div class="col-lg-8">
           <div class="pt-lg-md pb-lg-md">
-            <h1 id="page-title" class="heading display-4 font-weight-300 lh-110 mb-4">Mengshi is Testing Website</h1>
-            <!-- <p class="lead lh-180">Digital infrastructure for a more secure and privacy-respecting world. Let’s Encrypt has been awarded the Levchin Prize for Real-World Cryptography. We’re honored! <a href="/levchin-prize">Learn more about how we got here</a>.</p> -->
-            <p class="content">Digital infrastructure for a more secure and privacy-respecting world. Let’s Encrypt has been awarded the Levchin Prize for Real-World Cryptography. We’re honored! <a href="/levchin-prize">Learn more about how we got here</a>.</p>
-            <div class="mt-5">
-              <a href="/about/" class="btn btn-primary btn-sm btn-circle btn-translate--hover mr-2 mt-2">Learn about ISRG</a>
-              <a href="/sponsor/" class="btn btn-primary btn-sm btn-circle btn-translate--hover mr-2 mt-2">Become a sponsor</a>
-            </div>
+            <h1 id="page-title" class="heading display-4 font-weight-300 lh-110 mb-4"> Prof. Luo Siqiang's Group</h1>
+            <p class="intro-font">I am a <a href="https://www.ntu.edu.sg/scse">Nanyang Assistant Professor at the School of Computer Science and Engineering, Nanyang Technological University</a>. I am also affiliated with <a href="https://www3.ntu.edu.sg/scse/dmal/dante/">DANTE</a>. I received my B.S. and M.S. degrees in computer science from Fudan University, and a Ph.D. degree in computer science from the University of Hong Kong (working with Prof. <a href="https://www.cs.hku.hk/people/academic-staff/kao">Ben Kao</a>  and Prof. <a href="https://www.reynold.hku.hk/">Reynold Cheng</a> ). I also did a Postdoc at Harvard University (working with Prof. <a href="https://stratos.seas.harvard.edu/">Stratos Idreos</a> ).</a></p>
+          
+            <h3 class="ttl_style"> Research Interest. </h3>
+            <p class="intro-font">I am broadly interested in big data management algorithms and systems, particularly in the following areas:</p>
+            
+            <p class="intro-font">
+              1) Scalable graph algorithms/systems. Focus on optimizing fundamental graph analytical problems, such as PageRanks, GNNs and Community Search.
+            </p>
+            <p class="intro-font">
+              2) Scalable key-value systems. Focus on optimizing the performance of key-value stores such as RocksDB, particularly in filter and index designs.
+            </p>
+            <p class="intro-font">
+              3) Machine-learning driven data management.
+            </p>
           </div>
+
+
         </div>
-        <div class="col-lg-5 homepage-logos-column">
-          <div class="pt-lg-md pb-lg-md">
-            <div>
-              <a href="https://letsencrypt.org"><img src="/images/LE-Logo-Standard.svg" /></a>
+        <div class="col-lg-4 .homepage-logos">
+          <div class="pt-lg-md">
+            <div class="img-pos">
+              <img class= "img" src="/images/SiqiangLuo.jpg" />
             </div>
             <div>
-              <a href="https://memorysafety.org"><img src="/images/trademarks/prossimo/Prossimo%20Horizontal%20Full%20Color.svg" /></a>
+              <p class="name-font"> Siqiang Luo​</p>
+              <p class="name-font"> ​（骆思强）</p>
             </div>
+            <hr class="hr_style">
             <div>
-              <a href="https://divviup.org"><img src="/images/divviup/Divvi-Up-Large-Full-Color-Logo.png" /></a>
+              <p class="info-font"> Assistant Professor​</p>
+              <p class="info-font"><a  href="mailto:siqiang.luo@ntu.edu.sg​" style="color:black"> siqiang.luo@ntu.edu.sg​</a></p>
+              <p class="info-font"> <a href="https://scholar.google.com/citations?user=ZDwbMg4AAAAJ" style="color:black"> Google Scholar</a></p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="slice">
-    <div class="container">
-      <h2 class="eyebrow-text"><a href="/blog">From our Blog</a></h2>
-      {{ $posts := where .Site.RegularPages "Type" "in" (slice "post") | first 3 }} {{ range $posts }}
-      <div class="row row-grid">
-        <div class="col-md-12 col-lg-12">
-          <h2 class="heading h2">{{ .Title }}</h2>
-          <p>{{ with .Params.excerpt }} {{ . | markdownify }} {{ else }} {{ .Summary }} {{ end }}</p>
-          <a href="{{ .Permalink }}" class="link font-weight-bold" data-link="1">{{ i18n "read_more" }}</a>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-  </section>
 
-  {{ partial "isrg/isrg-projects-column.html" }}
+      <div >
+      <h3>Hiring. </h3>
+      <p class="intro-font">
+      A few openings for Ph.D.s and PostDocs. Please send me your CV if you are interested in working with me.
+     </p>
 
-  <section class="slice delimiter-top">
-    <div class="container">
-      <h2 class="eyebrow-text"><a href="/sponsors">Our Sponsors</a></h2>
+     <p class="intro-font"> I regret that only shortlisted candidates will be contacted.</p>
     </div>
-
-    <div class="container">
-      <div class="blurable--hover">
-        <a href="/sponsors/">
-          <div class="row blurable-item">
-            <div class="col-lg-2 col-md-3 col-4 mb-4 mb-md-0">
-              <div class="px-4 py-4">
-                <img src="/images/sponsors/mozilla-logo.png" class="img-fluid img-grayscale" />
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 mb-4 mb-md-0">
-              <div class="px-4 py-4">
-                <img src="/images/sponsors/cisco-logo.png" class="img-fluid img-grayscale" />
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 mb-4 mb-md-0">
-              <div class="px-4 py-4">
-                <img src="/images/sponsors/eff-logo.png" class="img-fluid img-grayscale" />
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 mb-4 mb-md-0">
-              <div class="px-4 py-4">
-                <img src="/images/sponsors/meta-logo.png" class="img-fluid img-grayscale" />
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 mb-4 mb-md-0">
-              <div class="px-4 py-4">
-                <img src="/images/sponsors/ovh-logo.png" class="img-fluid img-grayscale" />
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-4 mb-4 mb-md-0">
-              <div class="px-4 py-4">
-                <img src="/images/sponsors/chrome-logo.png" class="img-fluid img-grayscale" />
-              </div>
-            </div>
-          </div>
-          <span class="blurable-hidden btn btn-sm btn-primary btn-circle">See all sponsors</span>
-        </a>
-      </div>
     </div>
-  </section>
-  {{ partial "footer.html" . }}
 </html>
+{{ partial "footer.html" . }}
+
 
 <style>
 
-  .content {
-    background: rgb(0, 38, 255);
-    line-height: 1.8;
-    font-size: 24px !important;
-    font-weight: 400;
+  .photo-margin{
+  margin:0
   }
+
+  .img-pos{
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .img{
+    height: 230px;
+    width: 230px;
+    text-align: center;
+    border-radius:50%;
+  }
+
+  .intro-font{
+    font-size: 18px !important;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 0.25rem
+  }
+  .name-font{
+    font-weight: 800;
+    text-align: center;
+    font-size: 30px;
+    margin:0
+  }
+
+  .info-font{
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;
+    margin:0;
+    color:black !important
+  }
+  .hr_style{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    width: 60%;
+    border-top: .0625rem solid rgba(0,0,0,.1);
+}
+  .ttl_style{
+    margin-top: 1rem;
+  }
+  
+  .homepage-logos {
+    display: none;
+  }
+  .homepage-logos img{
+    margin: 0;
+  }
+
 </style>

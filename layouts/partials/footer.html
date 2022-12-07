@@ -1,13 +1,12 @@
     </main>
-    <footer class="footer py-5 bg-secondary" data-separator="rounded-right" data-separator-orientation="top">
+    <footer class="footer py-5 " data-separator="rounded-right" data-separator-orientation="top">
         <div class="container">
             <div class="align-items-center">
                 <div class="text-center">
                     <span class="d-block mt-4">
-                    <a href="/privacy-policy/">Privacy Policy</a> | <a href="/trademarks/">Trademark Policy</a><br>
                     {{ .Site.Params.copyrighthtml | safeHTML}}<br>
                     {{ .Site.Params.address}}<br>
-                    <p> {{ i18n "footer_mailing" }}
+                    <!-- <p> {{ i18n "footer_mailing" }}
                         <span itemscope itemtype="http://schema.org/PostalAddress">
                           <span itemprop="streetAddress">PO Box 18666</span>,
                           <span itemprop="addressLocality">Minneapolis</span>,
@@ -15,7 +14,7 @@
                           <span itemprop="postalCode">55418-0666</span>,
                           <span itemprop="addressCountry">USA</span>
                         </span>
-                      </p>
+                      </p> -->
                     </span>
                 </div>
             </div>
