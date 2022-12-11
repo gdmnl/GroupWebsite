@@ -1,4 +1,4 @@
-baseURL = "https://www.abetterinternet.org/"
+baseURL = "https://www.caomeisusu.com/"
 languageCode = "en-us"
 
 contentDir = "content/en"
@@ -8,10 +8,7 @@ defaultContentLanguageInSubdir = false
 [params]
 copyrighthtml = "&copy; 2022 Prof. Luo Siqiang's Research Group. All rights reserved."
 address = "50 Nanyang Ave, #32 Block N4 #02a, Singapore 639798"
-images = ["images/opengraph/ISRG-opengraph-wide.png"]
 twitter_card_format = "summary"
-social_share_twitter_square = "images/opengraph/ISRG-opengraph-square.png"
-social_share_twitter_wide = "images/opengraph/ISRG-opengraph-wide.png"
 
 # Date and time formatting, see https://gohugo.io/functions/format/
 time_format_RFC3339 = "2006-01-02T15:04:05Z07:00"
@@ -32,7 +29,7 @@ autoHeadingIDType = "blackfriday"
 
 [languages]
 [languages.en]
-title = "Mengshi's Test Website"
+title = "Siqiang Luo | Siqiang Luo's Homepage"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
