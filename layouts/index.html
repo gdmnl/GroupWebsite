@@ -8,7 +8,7 @@
         <div class="col-lg-8">
           <div class="pt-lg-md pb-lg-md">
             <!-- <h1 id="page-title" class="heading display-4 font-weight-300 lh-110 mb-4"> Prof. Luo Siqiang's Group</h1> -->
-            <p class="intro-font">I am a <a href="https://www.ntu.edu.sg/scse" target="_blank">Nanyang Assistant Professor at the School of Computer Science and Engineering, Nanyang Technological University</a>. I am also affiliated with <a href="https://www3.ntu.edu.sg/scse/dmal/dante/" target="_blank">DANTE</a>. I received my B.S. and M.S. degrees in computer science from Fudan University, and a Ph.D. degree in computer science from the University of Hong Kong (working with Prof. <a href="https://www.cs.hku.hk/people/academic-staff/kao" target="_blank">Ben Kao</a>  and Prof. <a href="https://www.reynold.hku.hk/" target="_blank">Reynold Cheng</a> ). I also did a Postdoc at Harvard University (working with Prof. <a href="https://stratos.seas.harvard.edu/" target="_blank">Stratos Idreos</a> ).</a></p>
+            <p class="intro-font">I am a <a href="https://www.ntu.edu.sg/scse" target="_blank" onclick="addcount()">Nanyang Assistant Professor at the School of Computer Science and Engineering, Nanyang Technological University</a><a id="ntuwebsite"></a>. I am also affiliated with <a href="https://www3.ntu.edu.sg/scse/dmal/dante/" target="_blank">DANTE</a>. I received my B.S. and M.S. degrees in computer science from Fudan University, and a Ph.D. degree in computer science from the University of Hong Kong (working with Prof. <a href="https://www.cs.hku.hk/people/academic-staff/kao" target="_blank">Ben Kao</a>  and Prof. <a href="https://www.reynold.hku.hk/" target="_blank">Reynold Cheng</a> ). I also did a Postdoc at Harvard University (working with Prof. <a href="https://stratos.seas.harvard.edu/" target="_blank">Stratos Idreos</a> ).</a></p>
           
             <h3 class="ttl_style"> Research Interest. </h3>
             <p class="intro-font">I am broadly interested in big data management algorithms and systems, particularly in the following areas:</p>
@@ -34,6 +34,7 @@
             <div>
               <p class="name-font"> Siqiang Luo​</p>
               <p class="name-font"> ​（骆思强）</p>
+              
             </div>
             <hr class="hr_style">
             <div>
@@ -44,6 +45,7 @@
           </div>
         </div>
       </div>
+
 
     <div class="portal-card">
       <h3>Hiring.</h3>
@@ -128,3 +130,59 @@
   }
 
 </style>
+
+<script type="module">
+  import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+  </script>
+
+<script>
+  
+
+  let jsondata = {
+    "id": 1,
+    "title": "Hello World",
+    "completed": false
+}
+
+  // const getdata = async() =>{
+  //   var url = "count.json"/*json文件url，本地的就写本地的位置，如果是服务器的就写服务器的路径*/
+  //   var request = new XMLHttpRequest();
+  //   request.open("get", url);/*设置请求方法与路径*/
+  //   request.send(null);/*不发送数据到服务器*/
+  //   request.onload = function () {/*XHR对象获取到返回信息后执行*/
+  //       if (request.status == 200) {/*返回状态为200，即为数据获取成功*/
+  //           var json = JSON.parse(request.responseText);
+  //           for(var i=0;i<json.length;i++){
+  //               console.log(json[i].name);
+  //           }
+  //           console.log(json.ntuwebsite)
+  //           jsondata = json
+  //           document.getElementById('ntuwebsite').innerHTML = json.ntuwebsite;
+  //           return json
+  //       }
+  //   }
+  // }
+
+  const getdata = async() =>{
+  let count = localStorage.getItem('counter');
+        if(count === null){
+            count = 0;
+            localStorage.setItem('counter', count);
+        }
+        count = parseInt(count);
+        document.getElementById('ntuwebsite').innerHTML = count;
+        updateCount(count);
+      }
+  
+  jsondata = getdata()
+
+  function addcount(){
+    let count = parseInt(localStorage.getItem('counter'));
+        count = count + 1;
+        localStorage.setItem('counter', count);
+        document.getElementById('ntuwebsite').innerHTML = count;
+        return true;
+
+  }
+
+</script>

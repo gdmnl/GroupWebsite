@@ -1,0 +1,26 @@
+{
+  "name": "cmswebsite",
+  "version": "1.0.0",
+  "description": "How to run:",
+  "main": "require.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengshichen-18/cmswebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mengshichen-18/cmswebsite/issues"
+  },
+  "homepage": "https://github.com/mengshichen-18/cmswebsite#readme",
+  "dependencies": {
+    "browserify-fs": "^1.0.0",
+    "edit-json-file": "^1.7.0",
+    "fs": "^0.0.1-security",
+    "requirejs": "^2.3.6"
+  }
+}
