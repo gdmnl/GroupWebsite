@@ -6,7 +6,7 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
 [params]
-copyrighthtml = "&copy; 2022 Prof. Luo Siqiang's Research Group. All rights reserved."
+copyrighthtml = "&copy; 2022 Dr. Luo Siqiang's Research Group. All rights reserved."
 address = "50 Nanyang Ave, #32 Block N4 #02a, Singapore 639798"
 twitter_card_format = "summary"
 
