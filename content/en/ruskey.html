@@ -1,0 +1,85 @@
+---
+title: Projects
+subtitle: Ruskey
+---
+
+
+<div class="moose-container">
+    <img src="/images/ResKey.png" alt="Super Moose Image" class="moose-top-image">
+    <h1 class="moose-title">Learning to Optimize LSM-trees:</h1>
+       <h1 class="moose-title"> Towards A Reinforcement
+        Learning based Key-Value Store for Dynamic Workloads</h1>
+    <div class="moose-content">
+        <p>LSM-trees are widely adopted as the storage backends of key-value stores. However, optimizing the system performance under dynamic workloads has not been sufficiently studied in previous work. To fill the gap, we present RusKey, a key-value store with the following new features:</p>
+
+        <p>(1) RusKey is a first attempt to design LSM-tree structures online to enable robust performance under the context of dynamic workloads;</p>
+        
+        <p>(2) RusKey is the first study to use Reinforcement Learning (RL) to guide LSM-tree transformations;</p>
+        
+        <p>(3) RusKey includes a new LSM-tree design, named FLSM-tree, that facilitates efficient transitions between different compaction policies, which addresses the key bottleneck for dynamic key-value stores. We justify the superiority of the new design with theoretical analysis;</p>
+        
+        <p>(4) RusKey requires no prior workload knowledge for system adjustment, in contrast to state-of-the-art techniques. Experiments show that RusKey exhibits strong performance robustness across diverse workloads, achieving up to 4x better end-to-end performance than the RocksDB system under various settings.</p>
+        
+            
+    </div>
+    <div class="moose-links">
+      <a href="https://arxiv.org/pdf/2308.07013" target="_blank">Read the paper</a>
+      <a href="https://drive.google.com/file/d/13wJmJ9tQEyB9M_Gt9dvius0LvkKgAfXd/view?pli=1">Watch the video</a>
+    </div>
+  </div>
+
+
+
+<style>
+  /* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  } */
+  .moose-container {
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  .moose-top-image {
+    width: 80%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    display: block;
+    margin: 0 auto;
+  }
+  .moose-title {
+    font-size: 28px;
+    color: #333;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .moose-content {
+    width: 80%;
+    font-size: 18px;
+    color: #111;
+    line-height: 1.45;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    text-align: justify
+  }
+  .moose-links {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .moose-links a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  .moose-links a:hover {
+    text-decoration: underline;
+  }
+
+  </style>
